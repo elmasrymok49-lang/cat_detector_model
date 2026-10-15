@@ -91,7 +91,7 @@ except Exception as e:
 uploaded_file = st.file_uploader(
     "📁 اختر صورة من جهازك (قطة أو كلب)", type=["jpg", "jpeg", "png"]
 )
-camera_file = st.camera_image("📸 أو التقط صورة بالكاميرا مباشرة")
+camera_file = st.camera_input("📸 أو التقط صورة بالكاميرا مباشرة")
 
 image = None
 if uploaded_file is not None:
